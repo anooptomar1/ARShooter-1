@@ -23,7 +23,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
         sceneView.scene.physicsWorld.contactDelegate = self;
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         let configuration = ARWorldTrackingSessionConfiguration();
         configuration.planeDetection = ARWorldTrackingSessionConfiguration.PlaneDetection.horizontal;
         
