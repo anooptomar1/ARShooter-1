@@ -21,12 +21,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
         let scene = SCNScene();
         sceneView.scene = scene;
         sceneView.scene.physicsWorld.contactDelegate = self;
+        
+        self.addNewShip()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         let configuration = ARWorldTrackingSessionConfiguration();
         configuration.planeDetection = ARWorldTrackingSessionConfiguration.PlaneDetection.horizontal;
-        
         sceneView.session.run(configuration);
     }
     
@@ -36,6 +37,24 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
         let positionY = floatBetween(-0.5, and: 0.5)
         newShip.position = SCNVector3(positionX, positionY, -1)
         sceneView.scene.rootNode.addChildNode(newShip)
+    }
+    
+    @IBAction func didTapScreen(_ sender:UITapGestureRecognizer) {
+        let bullet = Bullet()
+        bullet.position = SCNVector3(0, 0, -0.2)
+        
+        let bulletDirection = self.getUserDirection()
+        bullet.physicsBody?.applyForce(bulletDirection, asImpulse: true)
+        sceneView.scene.rootNode.addChildNode(bullet)
+    }
+    
+    func getUserDirection() -> SCNVector3 {
+        if let frame  = self.sceneView.session.currentFrame {
+            let mat = SCNMatrix4(frame.camera.transform)
+            return SCNVector3(-1 * mat.m31, -1 * mat.m32, -1 * mat.m33)
+        }
+        
+        return SCNVector3(0,0,-1)
     }
     
     func floatBetween(_ x:Float, and y:Float) -> Float{
