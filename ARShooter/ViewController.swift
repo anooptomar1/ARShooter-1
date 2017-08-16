@@ -61,9 +61,12 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
         return (Float(arc4random())/Float(UInt32.max)) * (x - y) + y
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK: Contact Delegate
+    func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
+        contact.nodeA.removeFromParentNode()
+        contact.nodeB.removeFromParentNode()
+        print("Hit ship")
+        self.addNewShip()
     }
 }
 
