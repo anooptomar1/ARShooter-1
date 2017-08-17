@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		DF0BF1261F3BEAD100BAD87C /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
-		DF13769B1F3AE9AA00DFC45B /* ARShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13769B1F3AE9AA00DFC45B /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13769E1F3AE9AA00DFC45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF1376A01F3AE9AA00DFC45B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF1376A31F3AE9AA00DFC45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		DF1376921F3AE9AA00DFC45B = {
 			isa = PBXGroup;
 			children = (
-				DF13769D1F3AE9AA00DFC45B /* ARShooter */,
+				DF13769D1F3AE9AA00DFC45B /* ARDemo */,
 				DF13769C1F3AE9AA00DFC45B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		DF13769C1F3AE9AA00DFC45B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF13769B1F3AE9AA00DFC45B /* ARShooter.app */,
+				DF13769B1F3AE9AA00DFC45B /* ARDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF13769D1F3AE9AA00DFC45B /* ARShooter */ = {
+		DF13769D1F3AE9AA00DFC45B /* ARDemo */ = {
 			isa = PBXGroup;
 			children = (
 				DF13769E1F3AE9AA00DFC45B /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				DF0BF1261F3BEAD100BAD87C /* Ship.swift */,
 				DFECE62F1F42EA6800A33EAE /* Bullet.swift */,
 			);
-			path = ARShooter;
+			path = ARDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF13769A1F3AE9AA00DFC45B /* ARShooter */ = {
+		DF13769A1F3AE9AA00DFC45B /* ARDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF1376AD1F3AE9AA00DFC45B /* Build configuration list for PBXNativeTarget "ARShooter" */;
+			buildConfigurationList = DF1376AD1F3AE9AA00DFC45B /* Build configuration list for PBXNativeTarget "ARDemo" */;
 			buildPhases = (
 				DF1376971F3AE9AA00DFC45B /* Sources */,
 				DF1376981F3AE9AA00DFC45B /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = ARShooter;
-			productName = ARShooter;
-			productReference = DF13769B1F3AE9AA00DFC45B /* ARShooter.app */;
+			name = ARDemo;
+			productName = ARDemo;
+			productReference = DF13769B1F3AE9AA00DFC45B /* ARDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF1376961F3AE9AA00DFC45B /* Build configuration list for PBXProject "ARShooter" */;
+			buildConfigurationList = DF1376961F3AE9AA00DFC45B /* Build configuration list for PBXProject "ARDemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF13769A1F3AE9AA00DFC45B /* ARShooter */,
+				DF13769A1F3AE9AA00DFC45B /* ARDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +190,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -245,6 +247,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -277,9 +281,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ARShooter/Info.plist;
+				INFOPLIST_FILE = ARDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xianlinbox.ARShooter;
+				PRODUCT_BUNDLE_IDENTIFIER = xianlinbox.ARDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,9 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ARShooter/Info.plist;
+				INFOPLIST_FILE = ARDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xianlinbox.ARShooter;
+				PRODUCT_BUNDLE_IDENTIFIER = xianlinbox.ARDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF1376961F3AE9AA00DFC45B /* Build configuration list for PBXProject "ARShooter" */ = {
+		DF1376961F3AE9AA00DFC45B /* Build configuration list for PBXProject "ARDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF1376AB1F3AE9AA00DFC45B /* Debug */,
@@ -311,7 +315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF1376AD1F3AE9AA00DFC45B /* Build configuration list for PBXNativeTarget "ARShooter" */ = {
+		DF1376AD1F3AE9AA00DFC45B /* Build configuration list for PBXNativeTarget "ARDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF1376AE1F3AE9AA00DFC45B /* Debug */,
