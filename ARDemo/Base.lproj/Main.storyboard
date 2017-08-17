@@ -68,6 +68,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ozQ-dT-oHq" appends="YES" id="6GL-HZ-eEt"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="goBackButton" destination="GDe-p7-6so" id="goS-YV-FBT"/>
@@ -75,6 +79,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyv-Hn-WBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ozQ-dT-oHq">
+                    <connections>
+                        <action selector="didTapScreen:" destination="VCb-p0-PWN" id="UAa-Lv-DAR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1188" y="-237"/>
         </scene>
