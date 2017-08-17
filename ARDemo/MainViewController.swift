@@ -9,9 +9,9 @@
 import UIKit
 
 class MainViewController:UIViewController {
-    @IBOutlet var shooterDemo:UIButton!
+    @IBOutlet weak var shooterDemo:UIButton!
     
     @IBAction func didTapOnShooterDemoButton() {
-        
+        self.performSegue(withIdentifier: "showShooterDemo", sender: self)
     }
 }

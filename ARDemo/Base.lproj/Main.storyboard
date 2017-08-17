@@ -29,6 +29,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapOnShooterDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="9H0-ik-vck"/>
+                                    <segue destination="VCb-p0-PWN" kind="show" identifier="showShooterDemo" id="Gqm-BP-8L4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,13 +51,27 @@
                         <viewControllerLayoutGuide type="top" id="fwM-L5-CKI"/>
                         <viewControllerLayoutGuide type="bottom" id="HvJ-qw-zl4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZRB-Fb-7Ns">
+                    <view key="view" contentMode="scaleToFill" id="ZRB-Fb-7Ns" customClass="ARSCNView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDe-p7-6so">
+                                <rect key="frame" x="164" y="601" width="60" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.70978218319999997" blue="0.43186599019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGoBackButton" destination="VCb-p0-PWN" eventType="touchUpInside" id="LFu-dh-tvV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="view" destination="ZRB-Fb-7Ns" id="FkL-MY-1su"/>
+                        <outlet property="goBackButton" destination="GDe-p7-6so" id="goS-YV-FBT"/>
+                        <outlet property="sceneView" destination="ZRB-Fb-7Ns" id="QDr-Vk-zOd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyv-Hn-WBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
