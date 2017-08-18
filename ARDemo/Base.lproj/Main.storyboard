@@ -32,8 +32,20 @@
                                     <segue destination="VCb-p0-PWN" kind="show" identifier="showShooterDemo" id="Gqm-BP-8L4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAX-rW-tEj">
+                                <rect key="frame" x="37" y="114" width="300" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Plane Detection">
+                                    <color key="titleShadowColor" red="1" green="0.90434706880000004" blue="0.40474798049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnShooterDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRg-cL-idO"/>
+                                    <segue destination="4uZ-Av-7qQ" kind="show" identifier="showPlaneDetectionDemo" id="gNf-X0-4QR"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="shooterDemo" destination="DKL-iK-KwK" id="TSY-UK-CPW"/>
@@ -86,6 +98,41 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1188" y="-237"/>
+        </scene>
+        <!--Plane Detection View Controller-->
+        <scene sceneID="ipw-Lk-NrF">
+            <objects>
+                <viewController id="4uZ-Av-7qQ" customClass="PlaneDetectionViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VGp-8r-Lo6"/>
+                        <viewControllerLayoutGuide type="bottom" id="VOC-e2-YGf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KDI-2N-f9f" customClass="ARSCNView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLy-A8-sxO">
+                                <rect key="frame" x="157" y="607" width="60" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.70978218319999997" blue="0.43186599019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGoBackButton" destination="4uZ-Av-7qQ" eventType="touchUpInside" id="uqx-Re-KzF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="goBackButton" destination="FLy-A8-sxO" id="ibV-t5-Vdd"/>
+                        <outlet property="sceneView" destination="KDI-2N-f9f" id="SPh-dZ-Ek9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXM-rF-8V0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="419"/>
         </scene>
     </scenes>
 </document>

@@ -10,8 +10,12 @@ import UIKit
 
 class MainViewController:UIViewController {
     @IBOutlet weak var shooterDemo:UIButton!
+    @IBOutlet weak var planeDetectionDemo:UIButton!
     
     @IBAction func didTapOnShooterDemoButton() {
         self.performSegue(withIdentifier: "showShooterDemo", sender: self)
+    }
+    @IBAction func didTapOnPlaneDetectionDemoButton() {
+        self.performSegue(withIdentifier: "showPlaneDetectionDemo", sender: self)
     }
 }

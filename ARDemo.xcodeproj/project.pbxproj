@@ -13,6 +13,7 @@
 		DF1376A41F3AE9AA00DFC45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1376A21F3AE9AA00DFC45B /* Main.storyboard */; };
 		DF1376A61F3AE9AA00DFC45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1376A51F3AE9AA00DFC45B /* Assets.xcassets */; };
 		DF1376A91F3AE9AA00DFC45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1376A71F3AE9AA00DFC45B /* LaunchScreen.storyboard */; };
+		DF82A4531F46B44100854DB5 /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */; };
 		DFD5E6041F456C1C009568C4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E6031F456C1C009568C4 /* MainViewController.swift */; };
 		DFECE6301F42EA6800A33EAE /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECE62F1F42EA6800A33EAE /* Bullet.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		DF1376A51F3AE9AA00DFC45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF1376A81F3AE9AA00DFC45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF1376AA1F3AE9AA00DFC45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
 		DFD5E6031F456C1C009568C4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DFECE62F1F42EA6800A33EAE /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,11 +66,20 @@
 				DF1376A21F3AE9AA00DFC45B /* Main.storyboard */,
 				DFD5E6031F456C1C009568C4 /* MainViewController.swift */,
 				DFD5E6021F456B2C009568C4 /* ARShooter */,
+				DF82A4511F46B3F800854DB5 /* PlaneDetection */,
 				DF1376A51F3AE9AA00DFC45B /* Assets.xcassets */,
 				DF1376A71F3AE9AA00DFC45B /* LaunchScreen.storyboard */,
 				DF1376AA1F3AE9AA00DFC45B /* Info.plist */,
 			);
 			path = ARDemo;
+			sourceTree = "<group>";
+		};
+		DF82A4511F46B3F800854DB5 /* PlaneDetection */ = {
+			isa = PBXGroup;
+			children = (
+				DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */,
+			);
+			path = PlaneDetection;
 			sourceTree = "<group>";
 		};
 		DFD5E6021F456B2C009568C4 /* ARShooter */ = {
@@ -157,6 +168,7 @@
 				DF13769F1F3AE9AA00DFC45B /* AppDelegate.swift in Sources */,
 				DFECE6301F42EA6800A33EAE /* Bullet.swift in Sources */,
 				DFD5E6041F456C1C009568C4 /* MainViewController.swift in Sources */,
+				DF82A4531F46B44100854DB5 /* PlaneDetectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
