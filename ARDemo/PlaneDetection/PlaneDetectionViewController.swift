@@ -30,4 +30,15 @@ class PlaneDetectionViewController: UIViewController, ARSCNViewDelegate, ARSessi
         sceneView.session.run(arSessionConfiguration)
     }
     
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        if let planeAnchor = anchor as? ARPlaneAnchor {
+            print("Plane detection")
+            
+            let scnBox = SCNBox(width: CGFloat(planeAnchor.extent.x * 0.3), height: 0, length: CGFloat(planeAnchor.extent.y * 0.3), chamferRadius: 0)
+            let planeNode = SCNNode(geometry: scnBox)
+            let planePosition = SCNVector3(planeAnchor.center.x, 0, planeAnchor.center.z)
+            planeNode.position = planePosition
+            node.addChildNode(planeNode)
+        }
+    }
 }
