@@ -44,6 +44,18 @@
                                     <segue destination="4uZ-Av-7qQ" kind="show" identifier="showPlaneDetectionDemo" id="gNf-X0-4QR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd0-MO-eZf">
+                                <rect key="frame" x="37" y="215" width="300" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Capture Camera Move">
+                                    <color key="titleShadowColor" red="1" green="0.90434706880000004" blue="0.40474798049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnCameraMoveDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="DoE-DP-Ssj"/>
+                                    <segue destination="9We-m1-Grp" kind="show" identifier="showCaptureCameraMoveDemo" id="stc-If-YFP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -133,6 +145,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXM-rF-8V0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1197" y="419"/>
+        </scene>
+        <!--Capture Camera Move View Controller-->
+        <scene sceneID="BEt-oo-tMI">
+            <objects>
+                <viewController id="9We-m1-Grp" customClass="CaptureCameraMoveViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ASR-gy-srN"/>
+                        <viewControllerLayoutGuide type="bottom" id="zte-Wc-v1H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nd4-aW-LCx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTK-Tq-2AM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="888"/>
         </scene>
     </scenes>
 </document>

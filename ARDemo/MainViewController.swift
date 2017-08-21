@@ -18,4 +18,8 @@ class MainViewController:UIViewController {
     @IBAction func didTapOnPlaneDetectionDemoButton() {
         self.performSegue(withIdentifier: "showPlaneDetectionDemo", sender: self)
     }
+    
+    @IBAction func didTapOnCameraMoveDemoButton() {
+        self.performSegue(withIdentifier: "showCaptureCameraMoveDemo", sender: self)
+    }
 }

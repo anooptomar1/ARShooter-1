@@ -13,6 +13,7 @@
 		DF1376A41F3AE9AA00DFC45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1376A21F3AE9AA00DFC45B /* Main.storyboard */; };
 		DF1376A61F3AE9AA00DFC45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1376A51F3AE9AA00DFC45B /* Assets.xcassets */; };
 		DF1376A91F3AE9AA00DFC45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1376A71F3AE9AA00DFC45B /* LaunchScreen.storyboard */; };
+		DF7630821F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7630811F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift */; };
 		DF82A4531F46B44100854DB5 /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */; };
 		DFD5E6041F456C1C009568C4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E6031F456C1C009568C4 /* MainViewController.swift */; };
 		DFECE6301F42EA6800A33EAE /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECE62F1F42EA6800A33EAE /* Bullet.swift */; };
@@ -27,6 +28,7 @@
 		DF1376A51F3AE9AA00DFC45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF1376A81F3AE9AA00DFC45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF1376AA1F3AE9AA00DFC45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7630811F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCameraMoveViewController.swift; sourceTree = "<group>"; };
 		DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
 		DFD5E6031F456C1C009568C4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DFECE62F1F42EA6800A33EAE /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
@@ -67,11 +69,20 @@
 				DFD5E6031F456C1C009568C4 /* MainViewController.swift */,
 				DFD5E6021F456B2C009568C4 /* ARShooter */,
 				DF82A4511F46B3F800854DB5 /* PlaneDetection */,
+				DF14E3E81F4A64BF009EA6D9 /* CapatureCameraMove */,
 				DF1376A51F3AE9AA00DFC45B /* Assets.xcassets */,
 				DF1376A71F3AE9AA00DFC45B /* LaunchScreen.storyboard */,
 				DF1376AA1F3AE9AA00DFC45B /* Info.plist */,
 			);
 			path = ARDemo;
+			sourceTree = "<group>";
+		};
+		DF14E3E81F4A64BF009EA6D9 /* CapatureCameraMove */ = {
+			isa = PBXGroup;
+			children = (
+				DF7630811F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift */,
+			);
+			path = CapatureCameraMove;
 			sourceTree = "<group>";
 		};
 		DF82A4511F46B3F800854DB5 /* PlaneDetection */ = {
@@ -166,6 +177,7 @@
 				DF1376A11F3AE9AA00DFC45B /* ARShooterViewController.swift in Sources */,
 				DF0BF1271F3BEAD100BAD87C /* Ship.swift in Sources */,
 				DF13769F1F3AE9AA00DFC45B /* AppDelegate.swift in Sources */,
+				DF7630821F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift in Sources */,
 				DFECE6301F42EA6800A33EAE /* Bullet.swift in Sources */,
 				DFD5E6041F456C1C009568C4 /* MainViewController.swift in Sources */,
 				DF82A4531F46B44100854DB5 /* PlaneDetectionViewController.swift in Sources */,

@@ -39,6 +39,13 @@ class PlaneDetectionViewController: UIViewController, ARSCNViewDelegate, ARSessi
             let planePosition = SCNVector3(planeAnchor.center.x, 0, planeAnchor.center.z)
             planeNode.position = planePosition
             node.addChildNode(planeNode)
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                let vaseScene = SCNScene(named: "Assets.xcassets/vase.scn")
+                let vaseNode =  vaseScene!.rootNode.childNodes[0]
+                vaseNode.position = SCNVector3Make(planeAnchor.center.x, 0, planeAnchor.center.z)
+                node.addChildNode(vaseNode)
+            })
         }
-    }
+    } 
 }
