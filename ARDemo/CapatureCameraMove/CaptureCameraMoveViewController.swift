@@ -24,7 +24,21 @@ class CaptureCameraMoveViewController: UIViewController, ARSCNViewDelegate, ARSe
         sceneView.session.run(arSessionConfiguration)
     }
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let airplaneScene = SCNScene(named: "");
+        let airplaneNode = airplaneScene!.rootNode.childNodes[0];
+        let airplaneScale = SCNVector3Make(0.5, 0.5, 0.5)
+        let airplanePosition = SCNVector3Make(0, -15, -15)
+        airplaneNode.position = airplanePosition
+        airplaneNode.scale = airplaneScale
+        
+        for node in airplaneNode.childNodes {
+            node.scale = airplaneScale
+            node.position = airplanePosition
+        }
+        
+        sceneView.scene.rootNode.addChildNode(airplaneNode)
+    }
     
     @IBAction func didTapGoBackButton() {
         print("Back to Home Screen!")
