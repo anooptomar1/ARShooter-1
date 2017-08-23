@@ -15,6 +15,7 @@
 		DF1376A91F3AE9AA00DFC45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1376A71F3AE9AA00DFC45B /* LaunchScreen.storyboard */; };
 		DF7630821F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7630811F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift */; };
 		DF82A4531F46B44100854DB5 /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */; };
+		DFB553BE1F4D0BF5007F1D8B /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB553BD1F4D0BF5007F1D8B /* AnimationViewController.swift */; };
 		DFD5E6041F456C1C009568C4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5E6031F456C1C009568C4 /* MainViewController.swift */; };
 		DFECE6301F42EA6800A33EAE /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECE62F1F42EA6800A33EAE /* Bullet.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		DF1376AA1F3AE9AA00DFC45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF7630811F4AC6F200C6F969 /* CaptureCameraMoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCameraMoveViewController.swift; sourceTree = "<group>"; };
 		DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
+		DFB553BD1F4D0BF5007F1D8B /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		DFD5E6031F456C1C009568C4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DFECE62F1F42EA6800A33EAE /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				DFD5E6031F456C1C009568C4 /* MainViewController.swift */,
 				DFD5E6021F456B2C009568C4 /* ARShooter */,
 				DF82A4511F46B3F800854DB5 /* PlaneDetection */,
+				DFB553BC1F4D0B29007F1D8B /* ARAnimation */,
 				DF14E3E81F4A64BF009EA6D9 /* CapatureCameraMove */,
 				DF1376A51F3AE9AA00DFC45B /* Assets.xcassets */,
 				DF1376A71F3AE9AA00DFC45B /* LaunchScreen.storyboard */,
@@ -91,6 +94,14 @@
 				DF82A4521F46B44100854DB5 /* PlaneDetectionViewController.swift */,
 			);
 			path = PlaneDetection;
+			sourceTree = "<group>";
+		};
+		DFB553BC1F4D0B29007F1D8B /* ARAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DFB553BD1F4D0BF5007F1D8B /* AnimationViewController.swift */,
+			);
+			path = ARAnimation;
 			sourceTree = "<group>";
 		};
 		DFD5E6021F456B2C009568C4 /* ARShooter */ = {
@@ -181,6 +192,7 @@
 				DFECE6301F42EA6800A33EAE /* Bullet.swift in Sources */,
 				DFD5E6041F456C1C009568C4 /* MainViewController.swift in Sources */,
 				DF82A4531F46B44100854DB5 /* PlaneDetectionViewController.swift in Sources */,
+				DFB553BE1F4D0BF5007F1D8B /* AnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKL-iK-KwK">
-                                <rect key="frame" x="37" y="28" width="300" height="50"/>
+                                <rect key="frame" x="37" y="143" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ARShooter">
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAX-rW-tEj">
-                                <rect key="frame" x="37" y="114" width="300" height="50"/>
+                                <rect key="frame" x="37" y="229" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Plane Detection">
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd0-MO-eZf">
-                                <rect key="frame" x="37" y="215" width="300" height="50"/>
+                                <rect key="frame" x="37" y="330" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Capture Camera Move">
@@ -54,6 +54,18 @@
                                 <connections>
                                     <action selector="didTapOnCameraMoveDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="DoE-DP-Ssj"/>
                                     <segue destination="9We-m1-Grp" kind="show" identifier="showCaptureCameraMoveDemo" id="stc-If-YFP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgF-Sw-Jky">
+                                <rect key="frame" x="37" y="423" width="300" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="AR动画效果">
+                                    <color key="titleShadowColor" red="1" green="0.90434706880000004" blue="0.40474798049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnCameraMoveDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJq-01-6bw"/>
+                                    <segue destination="qyo-C2-omR" kind="show" id="i0a-bP-Gbb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="-295" y="33"/>
         </scene>
         <!--ARShooterVC-->
         <scene sceneID="E9g-zs-JNG">
@@ -110,6 +122,45 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1188" y="-237"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="try-aj-rNi">
+            <objects>
+                <viewController id="qyo-C2-omR" customClass="AnimationViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X33-zs-8OA"/>
+                        <viewControllerLayoutGuide type="bottom" id="uXX-kU-iFK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mqd-XR-hpf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y3l-zL-jeH" customClass="ARSCNView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa2-5j-aA9">
+                                <rect key="frame" x="167" y="617" width="60" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.70978218319999997" blue="0.43186599019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGoBackButton" destination="qyo-C2-omR" eventType="touchUpInside" id="n2l-pY-U16"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="goBackButton" destination="fa2-5j-aA9" id="zLX-f0-qz6"/>
+                        <outlet property="sceneView" destination="Y3l-zL-jeH" id="Tlr-Gn-Gyn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgb-YD-gEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="877"/>
         </scene>
         <!--Plane Detection View Controller-->
         <scene sceneID="ipw-Lk-NrF">
@@ -183,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTK-Tq-2AM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.799999999999997" y="887.40629685157433"/>
+            <point key="canvasLocation" x="-674" y="877"/>
         </scene>
     </scenes>
 </document>
