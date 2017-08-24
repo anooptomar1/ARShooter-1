@@ -38,7 +38,19 @@ class CaptureCameraMoveViewController: UIViewController, ARSCNViewDelegate, ARSe
                 childNode.scale = airplaneScale
                 childNode.position = airplanePosition
             }
-            sceneView.scene.rootNode.addChildNode(airplaneNode!)
+            
+            let container = SCNNode()
+            let rootNode = sceneView.scene.rootNode
+            container.position =  rootNode.position
+            container.addChildNode(node)
+            rootNode.addChildNode(container)
+            
+            let rotateAnimation = CABasicAnimation(keyPath: "rotation")
+            rotateAnimation.duration = 30
+            rotateAnimation.toValue = NSValue(scnVector4: SCNVector4Make(0, 1, 0, Float(Double.pi * 2)))
+            rotateAnimation.repeatCount = Float.greatestFiniteMagnitude
+            
+            container.addAnimation(rotateAnimation, forKey: "rotate around the camera")
         }
     }
     
